@@ -9,3 +9,5 @@ It was further modified by Ray Halls in 1982 and Neil Harrison in 1983.
 Last known version was 2.8. It was further modified by Hector Peraza, starting from 2017. 
 Z80AS is actually an adaptation of the ZSM4 macro-assembler v4.6 published by Hector Peraza on GitHub ( https://github.com/hperaza/ZSM4 ), made by Ladislau Szilagyi in December 2021 – January 2022.
 Thanks to the high quality of the work done by Hector Peraza, the adaptation was easy, actually the most difficult part was writing a new OBJ format object code generator.
+
+Z80AS.HEX is the executable, in .HEX format
