@@ -265,6 +265,46 @@ COND	DEBUG
 	pop	hl
 	ret
 ENDC
+	ld	a,(CRTGRP)	;check DEFS
+	cp	e
+	jr	nz,skip
+				;in the same seg
+	ld	bc,(PC)		;BC=current PC
+	ld	a,l		;compare HL ? PC
+	cp	c
+	jr	nz,seedefs
+	ld	a,h
+	cp	b
+	jr	z,skip
+seedefs:			;not equal
+	push	hl		;save addr
+	push	de		;save seg
+	or	a		;CARRY=0
+	sbc	hl,bc		;HL=HL-PC , counter of zero bytes to be added 
+loopz:				;store (HL) zeros
+	push	hl		;counter on stack
+	ld	a,(PBUF)
+	or	a		;if buffer empty
+	call	z,SetTextType	;then prepare buffer
+	ld	a,(PBUF)
+	cp	SAFE		;if safe limit reached
+	jr	c,ok4
+	call	WriteBuf	;then write buffer
+	call	SetTextType	;prepare a new one
+	call	DeployREL	;then write RELOC recs (if any...)
+ok4:	xor	a		;A=0 = byte to write
+	call	StoreByte	;store-it
+	ld	hl,(PC)		;increment PC
+	inc	hl
+	ld	(PC),hl
+	pop	hl		;HL=counter
+	dec	hl
+	ld	a,l
+	or	h
+	jr	nz,loopz
+	pop	de		;restore seg
+	pop	hl		;restore addr
+skip:
 	ld	(PC),hl		;save PC
 	push	de
 	ld	a,(PBUF)	;buffer loaded?
@@ -375,7 +415,6 @@ COND	NOOBJ
 	ret
 ENDC	
 	xor	a
-	ld	(CRTGRP),a	;reset crt recs group
 	ld	(ASEG_F),a	;reset segment flags
 	ld	(CSEG_F),a
 	ld	(DSEG_F),a
@@ -392,6 +431,7 @@ ENDC
 	ld	(RPBUF),hl
 
 	dec	a		;A=FFH
+	ld	(CRTGRP),a	;reset crt recs group=FFH
 	ld	hl,RELBUF
 	ld	(hl),a		;init RELBUF with EOL mark
 
@@ -675,16 +715,20 @@ SetTextType:
 	inc	l
 	ex	de,hl
 				;store seg name
-	ld	a,(CRTGRP)	;80H:data, 40H:text, 00H:''
-	or	a
+	ld	a,(CRTGRP)	;80H:data, 40H:text, C0H:bss, 00H:''
+	or	a		;TEXT,ABS?
 	ld	hl,TEXT_T+4	;pointer of ''
 	ld	bc,1
 	jr	z,s1
 	ld	c,5		;4+1
-	cp	80H		;DATA?
+	cp	40H		;TEXT?
 	ld	hl,TEXT_T	;if no, write 'text'
-	jr	nz,s1
+	jr	z,s1
+	cp	80H		;DATA?
 	ld	hl,DATA_T	;if yes, write 'data'
+	jr	z,s1
+	ld	c,4		;else, is BSS
+	ld	hl,BSS_T
 s1:	
 	ldir
 	ld	(PBUF),de	;set pointer

@@ -11,3 +11,6 @@ Z80AS is actually an adaptation of the ZSM4 macro-assembler v4.6 published by He
 Thanks to the high quality of the work done by Hector Peraza, the adaptation was easy, actually the most difficult part was writing a new OBJ format object code generator.
 
 Z80AS.HEX is the executable, in .HEX format
+
+Z80AS can be assembled using Z80AS (self assembling assembler :)
+
