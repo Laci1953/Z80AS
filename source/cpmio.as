@@ -995,7 +995,7 @@ DEVNAM:	defm	'CON'
 OBJFILE:defs	2;
 LSTFILE:defs	2;
 
-VSNMSG:	defm	'Z80AS Macro-Assembler V'
+VSNMSG:	defm	'Z80AS Z80 Macro-Assembler V'
 	defb	VER1
 	defm	'.'
 	defb	VER2
