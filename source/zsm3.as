@@ -3,7 +3,8 @@
 ;   This file is part of ZSM4, a Z80/Z180/Z280 relocatable macro-      ;
 ;   assembler written in Z80 assembly.                                 ;
 ;   Copyright (C) 2017-2020, Hector Peraza.                            ;
-;   Modified by Ladislau Szilagyi ( dec 2021 - jan 2022 )              ;                           ;                                                                      ;
+;   Modified by Ladislau Szilagyi ( dec 2021 - jan 2022 )              ;
+;                                                                      ;
 ;   This program is free software; you can redistribute it and/or      ;
 ;   modify it under the terms of the GNU General Public License as     ;
 ;   published by the Free Software Foundation; either version 2 of     ;
