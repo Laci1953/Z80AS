@@ -17,6 +17,7 @@ The biggest ZAS problem is related to its size (38KB), and because of this ZAS i
 For example, ZAS fails to assemble the CP/M BDOS source. In contrast, Z80AS succeeds to assemble even a larger file, the CP/M BDOS and BIOS, concatenated.
 Often, using HiTech’s C compiler to compile large C files is not possible because ZAS fails to assemble the intermediate file produced by the compiler (“out of memory” error message).
 Z80AS is compatible with HiTech’s ZAS and produces object files compatible with HiTech’s LINK linker. Therefore, by using the -S option (to output the corresponding assembly file) when compiling a C source file, we can assemble the output with Z80AS, avoiding the “out of memory” error, then we can link the object file with the C library files to obtain the final .COM file.
+
 Z80AS main features are:
 •	Assembles Z80 code using the standard Zilog/Mostek mnemonics.
 •	The undocumented Z80 instructions are supported.
@@ -26,5 +27,7 @@ Z80AS main features are:
 
 Z80AS.HEX is the executable, in .HEX format
 
-Z80AS can be assembled using Z80AS (self assembling assembler :)
+The folder TESTS contains various tests of the Z80AS features.
+
+Z80AS was assembled using Z80AS (self assembling assembler :)
 
