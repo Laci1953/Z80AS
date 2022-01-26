@@ -1,5 +1,5 @@
 # Z80AS
-Z80 Assembler compatible with HiTech tools
+Z80 Assembler compatible with the HiTech C compiler, ZAS assembler and LINK linker
 
 Z80AS is a macro-assembler for Z80 microcomputers, running on the CP/M operating system. 
 
@@ -18,6 +18,7 @@ Z80AS is actually an adaptation of the ZSM4 macro-assembler v4.6 published by He
 Thanks to the high quality of the work done by Hector Peraza, the adaptation was easy, actually the most difficult part was writing a new OBJ format object code generator.
 
 Motivation
+----------
 
 The main target of the adaptation was to obtain an assembler compatible with ZAS, the assembler that is used by the HiTech C Compiler, but superior as performance. 
 
@@ -33,9 +34,13 @@ Z80AS is compatible with HiTech’s ZAS and produces object files compatible wit
 
 Therefore, by using the -S option (to output the corresponding assembly file) when compiling a C source file, we can assemble the output with Z80AS, avoiding the “out of memory” error, then we can link the object file with the C library files to obtain the final .COM file.
 
-Z80AS.HEX is the executable, in .HEX format
+----------------------------------------------------------------------------------------
+
+Z80AS.HEX is the executable, in .HEX format. Use CP/M's commands LOAD then SAVE to convert-it to Z80AS.com.
+
+Z80AS.HEX was obtained by assembling the Z80AS source files using Z80AS (self assembling assembler :)
+
+The folder SOURCES contains the Z80AS source files, ready to be assembled with ZAS (or Z80AS).
 
 The folder TESTS contains various tests of the Z80AS features.
-
-Z80AS was assembled using Z80AS (self assembling assembler :)
 
