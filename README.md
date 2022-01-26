@@ -34,6 +34,14 @@ Z80AS is compatible with HiTech’s ZAS and produces object files compatible wit
 
 Therefore, by using the -S option (to output the corresponding assembly file) when compiling a C source file, we can assemble the output with Z80AS, avoiding the “out of memory” error, then we can link the object file with the C library files to obtain the final .COM file.
 
+Compared to HiTech's ZAS assembler, Z80AS has some advantages:
+
+- can compile larger source files
+- supports the undocumented Z80 instructions
+- has more pseude operators (coonditionals, listing control)
+- better MACRO facilities (REPT,IRP,IRPC,LOCAL)
+- better support for expression evaluation, including extensive use of parantheses and well-defined operator precedence
+
 ----------------------------------------------------------------------------------------
 
 Z80AS.HEX is the executable, in .HEX format. Use CP/M's commands LOAD then SAVE to convert-it to Z80AS.com.
