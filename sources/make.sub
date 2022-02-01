@@ -1,0 +1,15 @@
+z80as -j alloc
+z80as -j cpmio
+z80as -j eval
+z80as -j genobj
+z80as -j listing
+z80as -j macros
+z80as -j symbols
+z80as -j zsm1
+z80as -j zsm2
+z80as -j zsm3
+z80as -j zsm4
+z80as -j zsm5
+z80as -j zsm6
+z80as -j start
+z80as -j atof
