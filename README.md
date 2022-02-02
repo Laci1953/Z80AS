@@ -24,7 +24,7 @@ The main target of the adaptation was to obtain an assembler compatible with ZAS
 
 The biggest ZAS problem is related to its size (38KB), and because of this ZAS is unable to assemble large source files (too small free space remains for the symbols). 
 
-Z80AS’s size is only 22KB, that means 16KB more memory is available to store the symbols, compared to ZAS.
+Z80AS’s size is only 24KB, that means 14KB more memory is available to store the symbols, compared to ZAS.
 
 For example, ZAS fails to assemble the CP/M BDOS source. In contrast, Z80AS succeeds to assemble even a larger file, the CP/M BDOS and BIOS, concatenated.
 
