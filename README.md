@@ -44,9 +44,9 @@ Compared to HiTech's ZAS assembler, Z80AS has some advantages:
 
 ----------------------------------------------------------------------------------------
 
-Z80AS.HEX is the executable, in .HEX format. Use CP/M's commands LOAD then SAVE to convert-it to Z80AS.com.
+Z80AS.COM is the executable.
 
-Z80AS.HEX was obtained by assembling the Z80AS source files using Z80AS (self assembling assembler :)
+Z80AS.COM was obtained by assembling the Z80AS source files using Z80AS (self assembling assembler :)
 
 The folder SOURCES contains the Z80AS source files, ready to be assembled with ZAS (or Z80AS).
 
