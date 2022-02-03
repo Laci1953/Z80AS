@@ -48,7 +48,9 @@ Z80AS.COM is the executable.
 
 Z80AS.COM was obtained by assembling the Z80AS source files using Z80AS (self assembling assembler :)
 
-The folder SOURCES contains the Z80AS source files, ready to be assembled with ZAS (or Z80AS).
+However, if you decide to use ZAS to assemble the source files, it will work too.
+
+The folder SOURCES contains the Z80AS source files.
 
 The folder TESTS contains various tests of the Z80AS features.
 
