@@ -32,7 +32,22 @@ Often, using HiTech’s C compiler to compile large C files is not possible beca
 
 Z80AS is compatible with HiTech’s ZAS and produces object files compatible with HiTech’s LINK linker. 
 
-Therefore, by using the -S option (to output the corresponding assembly file) when compiling a C source file, we can assemble the output with Z80AS, avoiding the “out of memory” error, then we can link the object file with the C library files to obtain the final .COM file.
+Therefore, it can substitute ZAS, without disturbing the use of HiTech's C compiler.
+
+Try this:
+
+>PIP OLDZAS.COM=ZAS.COM (save a copy of ZAS.COM, just in case)
+>PIP ZAS.COM=Z80AS.COM
+
+Then, try to compile or build an executable file using the HiTech's C command:
+
+>C -V -C anyfile.c (just compile anyfile.c)
+
+or
+
+>C -V anyfile.c (build anyfile.COM)
+
+Z80AS will be executed, instead of ZAS, building the requested object code.
 
 Compared to HiTech's ZAS assembler, Z80AS has some advantages:
 
