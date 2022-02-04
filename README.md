@@ -36,16 +36,16 @@ Therefore, it can substitute ZAS, without disturbing the use of HiTech's C compi
 
 Try this:
 
->PIP OLDZAS.COM=ZAS.COM (save a copy of ZAS.COM, just in case)
->PIP ZAS.COM=Z80AS.COM
+  >PIP OLDZAS.COM=ZAS.COM (save a copy of ZAS.COM, just in case)
+  >PIP ZAS.COM=Z80AS.COM
 
 Then, try to compile or build an executable file using the HiTech's C command:
 
->C -V -C anyfile.c (just compile anyfile.c)
+  >C -V -C anyfile.c (just compile anyfile.c)
 
 or
 
->C -V anyfile.c (build anyfile.COM)
+  >C -V anyfile.c (build anyfile.COM)
 
 Z80AS will be executed, instead of ZAS, building the requested object code.
 
