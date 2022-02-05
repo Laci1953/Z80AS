@@ -66,7 +66,9 @@ Z80AS.COM was obtained by assembling the Z80AS source files using Z80AS (self as
 
 However, if you decide to use ZAS to assemble the source files, it will work too.
 
-The folder SOURCES contains the Z80AS source files.
+The folder SOURCES contains the Z80AS source files to be compiled with either ZAS or Z80AS.
+
+The folder SOURCES-Z80AS contains the Z80AS source files to be compiled ONLY with Z80AS.
 
 The folder TESTS contains various tests of the Z80AS features.
 
