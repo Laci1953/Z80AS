@@ -26,7 +26,7 @@ The biggest ZAS problem is related to its size (38KB), and because of this ZAS i
 
 Z80AS’s size is only 24KB, that means 14KB more memory is available to store the symbols, compared to ZAS.
 
-For example, ZAS fails to assemble the CP/M BDOS source. In contrast, Z80AS succeeds to assemble even a larger file, the CP/M BDOS and BIOS, concatenated.
+For example, ZAS fails to assemble the CP/M BDOS source. In contrast, Z80AS succeeds to assemble even a larger file, the CP/M BDOS and BIOS, concatenated (see the file: tests/bdosbios.as).
 
 Often, using HiTech’s C compiler to compile large C files is not possible because ZAS fails to assemble the intermediate file produced by the compiler (“out of memory” error message).
 
