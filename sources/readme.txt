@@ -1,3 +1,5 @@
+This folder contains source files that can be assembled either with ZAS or Z80AS.
+
 Use make.sub and link.sub to build Z80AS from the sources.
 
 If you decide to use ZAS to build Z80AS, you must modify the make.sub file, changing Z80AS with ZAS.
