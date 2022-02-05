@@ -50,8 +50,6 @@ DEL         EQU 7FH            ;rubout
 ;
 ;   Set origin for CP/M
 ;
-;       ORG 0D000H
-;
 CBASE:      JP COMMAND          ;execute command processor (ccp).
             JP CLEARBUF         ;entry to empty input buffer before starting ccp.
 
