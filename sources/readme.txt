@@ -2,7 +2,7 @@ This folder contains source files that can be assembled either with ZAS or Z80AS
 
 Use make.sub and link.sub to build Z80AS from the sources.
 
-If you decide to use ZAS to build Z80AS, you must modify the make.sub file, changing Z80AS with ZAS.
+If ZAS cannot assemble some of the source files, or you decide to use Z80AS to build Z80AS, you must modify the make.sub file, changing ZAS with Z80AS.
 
 Also, the order of the object files in the link.sub is critical: start.obj must be the first one, and cpmio.obj the last one.
 
