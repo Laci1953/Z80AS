@@ -11,7 +11,7 @@ The original source was Copyright (C) 1977, Lehman Consulting Services and was p
 
 It was further modified by Ray Halls in 1982 and Neil Harrison in 1983. 
 
-Last known version was 2.8. 
+Last known Z80ASM version was 2.8. 
 
 It was further modified by Hector Peraza, starting from 2017. 
 
