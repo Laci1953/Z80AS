@@ -1,4 +1,0 @@
-xsub
-link
--ptext=100H,data -c100h -oz80as.com start.obj atof.obj z80as.obj\
- alloc.obj eval.obj genobj.obj listing.obj macros.obj symbols.obj cpmio.obj
