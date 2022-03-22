@@ -1,4 +1,4 @@
-# Z80AS
+# Z80AS - last version copiled at 22 March 2022
 Z80 Assembler compatible with the HiTech C compiler, ZAS assembler and LINK linker
 
 Z80AS is a macro-assembler for Z80 microcomputers, running on the CP/M operating system. 
