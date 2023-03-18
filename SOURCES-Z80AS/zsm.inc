@@ -4,7 +4,7 @@ TRUE	equ	1		; stranger than fiction
 VER	equ	47		; version number
 
 VER1	equ	'4'		; most significant version digit
-VER2	equ	'7'		; least significant version digit
+VER2	equ	'8'		; least significant version digit
 
 CR	equ	13
 LF	equ	10
