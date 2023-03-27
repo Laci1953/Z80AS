@@ -67,7 +67,7 @@ Compared to HiTech's ZAS assembler, Z80AS has some advantages:
 
 Z80AS.HEX is the executable, version V4.8.
 
-The folder SOURCES-Z80AS contains the Z80AS source files.
+The folder SOURCES contains the Z80AS source files.
 
 The folder TESTS contains various tests of the Z80AS features.
 
