@@ -1,0 +1,14 @@
+zas -j alloc.as
+zas -j cpmio.as
+zas -j eval.as
+zas -j genobj.as
+zas -j listing.as
+zas -j macros.as
+zas -j symbols.as
+zas -j z80as1.as
+zas -j z80as2.as
+zas -j z80as3.as
+zas -j z80as4.as
+zas -j z80as5.as
+zas -j start.as
+zas -j atof.as

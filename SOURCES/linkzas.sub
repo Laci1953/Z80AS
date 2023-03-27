@@ -1,0 +1,4 @@
+xsub
+link
+-ptext=100H,data -c100h -oz80as.com start.obj atof.obj z80as1.obj z80as2.obj z80as3.obj z80as4.obj z80as5.obj \
+ alloc.obj eval.obj genobj.obj listing.obj macros.obj symbols.obj cpmio.obj
