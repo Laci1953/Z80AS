@@ -1,4 +1,4 @@
-This folder contains source files that must be compiled ONLY with Z80AS
+This folder contains source files
 
 Use makezas.sub and linkzas.sub to build Z80AS from the sources.
 
