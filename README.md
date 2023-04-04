@@ -1,4 +1,4 @@
-# Z80AS - last update on 27 March 2023 
+# Z80AS - last update on 4 April 2023 
 - increased jump optimization table to 512 (from 128)
 - fixed 2 bugs in temporary labels handling
 
