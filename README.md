@@ -1,5 +1,4 @@
 # Z80AS - last update on 11 May 2023 
--fixed syntax checking related bugs in the command line
 
 Z80 Assembler compatible with the HiTech C compiler, ZAS assembler and LINK linker
 
