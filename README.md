@@ -1,4 +1,4 @@
-# Z80AS - last update on 11 May 2023 
+# Z80AS - last update on 25 October 2023
 
 Z80 Assembler compatible with the HiTech C compiler, ZAS assembler and LINK linker
 
