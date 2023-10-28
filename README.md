@@ -69,4 +69,4 @@ The folder SOURCES contains the Z80AS source files.
 
 The folder TESTS contains various tests of the Z80AS features.
 
-The update dated 25 October increased the number of temporary labels (now max=600) and jump optimizations (now max=1024)
+The update dated 25 October 2023 increased the number of temporary labels (now max=600) and jump optimizations (now max=1024)
