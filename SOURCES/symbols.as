@@ -379,7 +379,6 @@ SYMEN2:	ld	hl,(SYMPTR)
 ;	ld	(hl),d
 	inc	hl
 	ld	(SYMPTR),hl
-	ld	(8000H),hl
 	ld	(hl),0		; set up new pointer and new end marker
 	pop	hl
 	ld	(SYMADR),hl	; save address for EQU
