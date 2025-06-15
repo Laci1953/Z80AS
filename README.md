@@ -1,6 +1,6 @@
 # Z80AS - last update on 25 Jan 2024
 
-Z80 Assembler compatible with the HiTech C compiler, ZAS assembler and LINK linker
+Z80 Assembler, compatible with the HiTech C compiler, ZAS assembler and LINK linker
 
 Z80AS is a macro-assembler for Z80 microcomputers, running on the CP/M operating system. 
 
@@ -27,31 +27,11 @@ The main target of the adaptation was to obtain an assembler compatible with ZAS
 
 The biggest ZAS problem is related to its size (38KB), and because of this ZAS is unable to assemble large source files (too small free space remains for the symbols). 
 
-Z80AS’s size is only 22KB, that means 16KB more memory is available to store the symbols, compared to ZAS.
-
 For example, ZAS fails to assemble the CP/M BDOS source. In contrast, Z80AS succeeds to assemble even a larger file, the CP/M BDOS and BIOS, concatenated (see the file: tests/bdosbios.as).
 
 Often, using HiTech’s C compiler to compile large C files is not possible because ZAS fails to assemble the intermediate file produced by the compiler (“out of memory” error message).
 
 Z80AS is compatible with HiTech’s ZAS and produces object files compatible with HiTech’s LINK linker. 
-
-Therefore, it can substitute ZAS, without disturbing the use of HiTech's C compiler.
-
-Try this:
-
-PIP OLDZAS.COM=ZAS.COM (save a copy of ZAS.COM, just in case)
-  
-PIP ZAS.COM=Z80AS.COM
-
-Then, try to compile or build an executable file using the HiTech's C command:
-
-C -V -C anyfile.c (just compile anyfile.c)
-
-or
-
-C -V anyfile.c (build anyfile.COM)
-
-Z80AS will be executed, instead of ZAS, building the requested object code.
 
 Compared to HiTech's ZAS assembler, Z80AS has some advantages:
 
