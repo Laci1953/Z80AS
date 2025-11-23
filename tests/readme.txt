@@ -1,8 +1,8 @@
 Tests for Z80AS
 
-They include now the ZEXDOC & ZEXALL Z80 tests too.
+They include now the ZEXDOC & ZEXALL Z80 tests too, ready to be assembled using Z80AS.
 
-To use them:
+To build them:
 
 >Z80AS ZEXDOC
 >LINK
